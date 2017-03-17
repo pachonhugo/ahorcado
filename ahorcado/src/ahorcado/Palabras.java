@@ -14,7 +14,7 @@ public class Palabras {
     int numero;
     String palabrajugar;
     String[] opciones= new String[5];
-    char elejida[];
+    char cadena [];
     
     public void llenararrego(){
         
@@ -36,7 +36,8 @@ public class Palabras {
     public void tomartalabra(){
  
     
-        char elejida [] = palabrajugar.toCharArray();
+        
+        cadena = palabrajugar.toCharArray();
     }
 
 }

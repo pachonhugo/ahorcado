@@ -18,7 +18,15 @@ public class Ahorcado {
     
     
     public static void main(String[] args) {
+        
+        Palabras mipalabra=new Palabras();
+        
+        mipalabra.llenararrego();
+        mipalabra.seleccionarpalabra();
+        mipalabra.tomartalabra();
       
+        Grafica migrafica=new Grafica();
+        migrafica.setVisible(true);
         
     }
     
