@@ -21,9 +21,7 @@ public class Ahorcado {
         
         Palabras mipalabra=new Palabras();
         
-        mipalabra.llenararrego();
-        mipalabra.seleccionarpalabra();
-        mipalabra.tomartalabra();
+
       
         Grafica migrafica=new Grafica();
         migrafica.setVisible(true);

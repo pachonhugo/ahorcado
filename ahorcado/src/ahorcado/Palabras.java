@@ -19,26 +19,18 @@ public class Palabras {
     public void llenararrego(){
         
         opciones[0]="negocio";
-        opciones[0]="tablero";
-        opciones[0]="scanner";
-        opciones[0]="parcial";
-        opciones[0]="visible";
+        opciones[1]="tablero";
+        opciones[2]="scanner";
+        opciones[3]="parcial";
+        opciones[4]="visible";
     
     }
     
     public String seleccionarpalabra(){
         
-        numero=(int) (Math.random()*7+1);
+        numero=(int) (Math.random()*4+1);
         palabrajugar=opciones[numero];
         return (palabrajugar);
     }
     
-    public void tomartalabra(){
- 
-    
-        
-        cadena = palabrajugar.toCharArray();
-    }
-
 }
-

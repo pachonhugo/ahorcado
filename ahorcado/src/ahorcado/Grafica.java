@@ -11,6 +11,7 @@ import javax.swing.JTextField;
  *
  * @author estudiantes
  */
+
 public class Grafica extends javax.swing.JFrame {
 
     /**
@@ -20,9 +21,12 @@ public class Grafica extends javax.swing.JFrame {
     
     Palabras mipalabras=new Palabras();
     int oportunidades=5;
+            
     
     public Grafica() {
         initComponents();
+        mipalabras.llenararrego();
+        mipalabras.seleccionarpalabra();
     }
 
     /**
@@ -57,6 +61,7 @@ public class Grafica extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("ingrese letra:");
 
         jLabel2.setFont(new java.awt.Font("LM Sans Quot 8", 3, 36)); // NOI18N
@@ -101,6 +106,9 @@ public class Grafica extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
                         .addGap(45, 45, 45)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 450, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -120,17 +128,14 @@ public class Grafica extends javax.swing.JFrame {
                                 .addComponent(Letra7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(206, 206, 206)
+                        .addComponent(BotonSeleccionar))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(192, 192, 192)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(BotonSeleccionar)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(5, 5, 5)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(Ingresada, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(199, 199, 199)))
+                                .addGap(12, 12, 12)
+                                .addComponent(Ingresada, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(41, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -138,9 +143,9 @@ public class Grafica extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(Ingresada, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(BotonSeleccionar)
@@ -173,35 +178,38 @@ public class Grafica extends javax.swing.JFrame {
         
         oportunidades--;
         
+        String algo=mipalabras.seleccionarpalabra();
+        String letrai=this.Ingresada.getText();
+        
         for(int i=0;i<7;i++){
-            if(mipalabras.cadena[i]==this.Ingresada.getText().toCharArray() ){
+            if(algo.charAt(i)==letrai.charAt(0) ){
                 switch(i){
-                    case 1:{
-                        this.Letra1.setText(String.valueOf(mipalabras.cadena[1]));
+                    case 0:{
+                        this.Letra1.setText(String.valueOf(algo.charAt(0)));
                         oportunidades++;
                     }break;
-                    case 2:{
-                        this.Letra2.setText(String.valueOf(mipalabras.cadena[2]));
+                    case 1:{
+                        this.Letra2.setText(String.valueOf(algo.charAt(1)));
                         oportunidades++;
                     }break;        
+                    case 2:{
+                        this.Letra3.setText(String.valueOf(algo.charAt(2)));
+                        oportunidades++;
+                    }break;                    
                     case 3:{
-                        this.Letra3.setText(String.valueOf(mipalabras.cadena[3]));
+                        this.Letra4.setText(String.valueOf(algo.charAt(3)));
                         oportunidades++;
                     }break;                    
                     case 4:{
-                        this.Letra4.setText(String.valueOf(mipalabras.cadena[4]));
+                        this.Letra5.setText(String.valueOf(algo.charAt(4)));
                         oportunidades++;
                     }break;                    
                     case 5:{
-                        this.Letra5.setText(String.valueOf(mipalabras.cadena[5]));
+                        this.Letra6.setText(String.valueOf(algo.charAt(5)));
                         oportunidades++;
                     }break;                    
                     case 6:{
-                        this.Letra6.setText(String.valueOf(mipalabras.cadena[6]));
-                        oportunidades++;
-                    }break;                    
-                    case 7:{
-                        this.Letra7.setText(String.valueOf(mipalabras.cadena[7]));
+                        this.Letra7.setText(String.valueOf(algo.charAt(6)));
                         oportunidades++;
                     }break;                    
                 }
