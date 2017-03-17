@@ -5,8 +5,6 @@
  */
 package ahorcado;
 
-import javax.swing.JTextField;
-
 /**
  *
  * @author estudiantes
@@ -42,14 +40,14 @@ public class Grafica extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         BotonSeleccionar = new javax.swing.JButton();
-        Letra1 = new javax.swing.JTextField();
+        Letra0 = new javax.swing.JTextField();
         jTextField8 = new javax.swing.JTextField();
         Letra2 = new javax.swing.JTextField();
+        Letra1 = new javax.swing.JTextField();
         Letra3 = new javax.swing.JTextField();
         Letra4 = new javax.swing.JTextField();
         Letra5 = new javax.swing.JTextField();
         Letra6 = new javax.swing.JTextField();
-        Letra7 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -87,15 +85,15 @@ public class Grafica extends javax.swing.JFrame {
             }
         });
 
-        Letra6.addActionListener(new java.awt.event.ActionListener() {
+        Letra5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Letra6ActionPerformed(evt);
+                Letra5ActionPerformed(evt);
             }
         });
 
-        Letra7.addActionListener(new java.awt.event.ActionListener() {
+        Letra6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Letra7ActionPerformed(evt);
+                Letra6ActionPerformed(evt);
             }
         });
 
@@ -113,19 +111,19 @@ public class Grafica extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 450, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(Letra1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Letra0, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(Letra3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Letra1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(Letra2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(Letra3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(Letra4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(Letra5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(Letra6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(Letra7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(Letra6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(206, 206, 206)
                         .addComponent(BotonSeleccionar))
@@ -151,13 +149,13 @@ public class Grafica extends javax.swing.JFrame {
                 .addComponent(BotonSeleccionar)
                 .addGap(27, 27, 27)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Letra1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Letra0, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Letra2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Letra1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Letra3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Letra4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Letra5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Letra6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Letra7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Letra6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(36, 36, 36)
                 .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(39, Short.MAX_VALUE))
@@ -185,7 +183,7 @@ public class Grafica extends javax.swing.JFrame {
             if(algo.charAt(i)==letrai.charAt(0) ){
                 switch(i){
                     case 0:{
-                        this.Letra1.setText(String.valueOf(algo.charAt(0)));
+                        this.Letra0.setText(String.valueOf(algo.charAt(0)));
                         oportunidades++;
                     }break;
                     case 1:{
@@ -193,23 +191,23 @@ public class Grafica extends javax.swing.JFrame {
                         oportunidades++;
                     }break;        
                     case 2:{
-                        this.Letra3.setText(String.valueOf(algo.charAt(2)));
+                        this.Letra1.setText(String.valueOf(algo.charAt(2)));
                         oportunidades++;
                     }break;                    
                     case 3:{
-                        this.Letra4.setText(String.valueOf(algo.charAt(3)));
+                        this.Letra3.setText(String.valueOf(algo.charAt(3)));
                         oportunidades++;
                     }break;                    
                     case 4:{
-                        this.Letra5.setText(String.valueOf(algo.charAt(4)));
+                        this.Letra4.setText(String.valueOf(algo.charAt(4)));
                         oportunidades++;
                     }break;                    
                     case 5:{
-                        this.Letra6.setText(String.valueOf(algo.charAt(5)));
+                        this.Letra5.setText(String.valueOf(algo.charAt(5)));
                         oportunidades++;
                     }break;                    
                     case 6:{
-                        this.Letra7.setText(String.valueOf(algo.charAt(6)));
+                        this.Letra6.setText(String.valueOf(algo.charAt(6)));
                         oportunidades++;
                     }break;                    
                 }
@@ -223,13 +221,13 @@ public class Grafica extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_Letra2ActionPerformed
 
+    private void Letra5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Letra5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Letra5ActionPerformed
+
     private void Letra6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Letra6ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_Letra6ActionPerformed
-
-    private void Letra7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Letra7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Letra7ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -269,13 +267,13 @@ public class Grafica extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BotonSeleccionar;
     private javax.swing.JTextField Ingresada;
+    private javax.swing.JTextField Letra0;
     private javax.swing.JTextField Letra1;
     private javax.swing.JTextField Letra2;
     private javax.swing.JTextField Letra3;
     private javax.swing.JTextField Letra4;
     private javax.swing.JTextField Letra5;
     private javax.swing.JTextField Letra6;
-    private javax.swing.JTextField Letra7;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JTextField jTextField8;

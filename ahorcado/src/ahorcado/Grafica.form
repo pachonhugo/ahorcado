@@ -34,19 +34,19 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel2" min="-2" pref="450" max="-2" attributes="0"/>
                           <Group type="102" attributes="0">
-                              <Component id="Letra1" min="-2" pref="50" max="-2" attributes="0"/>
+                              <Component id="Letra0" min="-2" pref="50" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="Letra3" min="-2" pref="50" max="-2" attributes="0"/>
+                              <Component id="Letra1" min="-2" pref="50" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="Letra2" min="-2" pref="50" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="Letra3" min="-2" pref="50" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="Letra4" min="-2" pref="50" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="Letra5" min="-2" pref="50" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="Letra6" min="-2" pref="50" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="Letra7" min="-2" pref="50" max="-2" attributes="0"/>
+                              <Component id="Letra6" min="-2" pref="50" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -82,13 +82,13 @@
               <Component id="BotonSeleccionar" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="Letra1" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="Letra0" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
                   <Component id="Letra2" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="Letra1" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
                   <Component id="Letra3" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
                   <Component id="Letra4" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
                   <Component id="Letra5" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
                   <Component id="Letra6" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
-                  <Component id="Letra7" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
               <Component id="jTextField8" min="-2" pref="235" max="-2" attributes="0"/>
@@ -132,7 +132,7 @@
         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="BotonSeleccionarMouseClicked"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="Letra1">
+    <Component class="javax.swing.JTextField" name="Letra0">
     </Component>
     <Component class="javax.swing.JTextField" name="jTextField8">
       <Events>
@@ -144,20 +144,20 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Letra2ActionPerformed"/>
       </Events>
     </Component>
+    <Component class="javax.swing.JTextField" name="Letra1">
+    </Component>
     <Component class="javax.swing.JTextField" name="Letra3">
     </Component>
     <Component class="javax.swing.JTextField" name="Letra4">
     </Component>
     <Component class="javax.swing.JTextField" name="Letra5">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Letra5ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="Letra6">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Letra6ActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JTextField" name="Letra7">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Letra7ActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>
